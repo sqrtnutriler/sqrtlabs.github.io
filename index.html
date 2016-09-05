@@ -32,6 +32,12 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
+	    <!-- Insert to your webpage before the </head> -->
+    <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
+    <!-- End of head section HTML codes -->
 </head>
 
 <body class="no-page-top">
@@ -88,84 +94,48 @@
     </header>
     <!--End Header-->
 
-    <div id="container">
-
-        <!--Set your own slider options. Look at the v_RevolutionSlider() function in 'theme-core.js' file to see options-->
-        <div class="home-slider-wrap fullwidthbanner-container" id="home" >
-            <div class="v-rev-slider" data-slider-options='{ "startheight": 700 }'>
-
-                <ul>
-
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="600">
-
-                        <img src="img/slider/pexels-photo.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-
-                        <div class="tp-caption v-caption-big-white sfl stl"
-                            data-x="450"
-                            data-y="245"
-                            data-speed="600"
-                            data-start="600"
-                            data-easing="Power1.easeInOut"
-                            data-splitin="none"
-                            data-splitout="none"
-                            data-elementdelay="0"
-                            data-endelementdelay="0"
-                            data-endspeed="300" style="color: #fff" >
-                            SQRT Labs
-                            <br />
-                            Boosting Innovation & Growth
-                        </div>
-
-                        <div class="tp-caption v-caption-h1 sfl stl"
-                            data-x="450"
-                            data-y="360"
-                            data-speed="700"
-                            data-start="1200"
-                            data-easing="Power1.easeInOut"
-                            data-splitin="none"
-                            data-splitout="none"
-                            data-elementdelay="0"
-                            data-endelementdelay="0"
-                            data-endspeed="300" style="color: #000">
-                            Let us hire right people for you.<br>
-							Proven methodology, profound impact, and sustainable results.
-                        </div>
-
-                        <div class="tp-caption sfl stl"
-                            data-x="450"
-                            data-y="450"
-                            data-speed="600"
-                            data-start="1800"
-                            data-easing="Power1.easeInOut"
-                            data-splitin="none"
-                            data-splitout="none"
-                            data-elementdelay="0"
-                            data-endelementdelay="0"
-                            data-endspeed="300">
-                            <a href='#' class="btn v-btn v-second-light">GET IT NOW!</a>
-                        </div>
-
-                        <div class="tp-caption sfl stl"
-                            data-x="605"
-                            data-y="450"
-                            data-speed="600"
-                            data-start="2200"
-                            data-easing="Power1.easeInOut"
-                            data-splitin="none"
-                            data-splitout="none"
-                            data-elementdelay="0"
-                            data-endelementdelay="0"
-                            data-endspeed="300">
-                            <a href='#' class="btn v-btn v-second-light">FIND OUT MORE</a>
-                        </div>
-                        <!--<div class="v-slider-overlay overlay-colored"></div>-->
-                    </li>
-                </ul>
-            </div>
-
-            <div class="shadow-right"></div>
+  <div id="container">
+  
+       <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:1920px;margin:0px auto 56px;">
+        <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="images/pexels-photo.jpg" alt="SQRT Labs
+Boosting Innovation & Growth"  title="SQRT Labs
+Boosting Innovation & Growth" data-description="Let us hire right people for you." data-texteffect="Center text"/>
+<button class="as-btn-blue-medium">FIND OUT MORE</button>
+                </li>
+                <li><img src="images/people-woman-coffee-meeting.jpg" alt="SQRT Labs
+Boosting Innovation & Growth"  title="SQRT Labs
+Boosting Innovation & Growth" data-description="Proven methodology, profound impact, and sustainable results." data-texteffect="Center text" />
+<button class="as-btn-blue-medium">FIND OUT MORE</button>
+                </li>
+                <li><img src="images/pexels-photo%20%281%29.jpg" alt="SQRT Labs
+Boosting Innovation & Growth"  title="SQRT Labs
+Boosting Innovation & Growth" data-description="We’re Here For You." data-texteffect="Center text" />
+<button class="as-btn-blue-medium">FIND OUT MORE</button>
+                </li>
+                <li><img src="images/coffee-smartphone-desk-pen.jpg" alt="SQRT Labs
+Boosting Innovation & Growth"  title="SQRT Labs
+Boosting Innovation & Growth" data-description="Your Brand. Your Business. Our Staff." data-texteffect="Center text" />
+<button class="as-btn-blue-medium">FIND OUT MORE</button>
+                </li>
+            </ul>
+            <ul class="amazingslider-thumbnails" style="display:none;" >
+                <li><img src="images/pexels-photo-tn.jpg" alt="SQRT Labs
+Boosting Innovation & Growth" title="SQRT Labs
+Boosting Innovation & Growth" /></li>
+                <li><img src="images/people-woman-coffee-meeting-tn.jpg" alt="SQRT Labs
+Boosting Innovation & Growth" title="SQRT Labs
+Boosting Innovation & Growth" /></li>
+                <li><img src="images/pexels-photo%20%281%29-tn.jpg" alt="SQRT Labs
+Boosting Innovation & Growth" title="SQRT Labs
+Boosting Innovation & Growth" /></li>
+                <li><img src="images/coffee-smartphone-desk-pen-tn.jpg" alt="SQRT Labs
+Boosting Innovation & Growth" title="SQRT Labs
+Boosting Innovation & Growth" /></li>
+            </ul>
         </div>
-
+    </div>
         <div class="v-page-wrap no-bottom-spacing">
 
             <div class="container">
@@ -763,7 +733,7 @@
     <div id="back-to-top" class="animate-top"><i class="fa fa-angle-up"></i></div>
 
     <!-- Libs -->
-    <script src="js/jquery.min.js"></script>
+  <!--  <script src="js/jquery.min.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/jquery.easing.js"></script>
